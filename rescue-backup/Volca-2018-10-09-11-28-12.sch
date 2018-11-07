@@ -1,0 +1,713 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    118  ~ 24
+Mixer  state from volca indiv. out.\n- PCB section
+$Comp
+L CP 10uF
+U 1 1 5B4E19A0
+P 7600 2300
+F 0 "10uF" H 7625 2400 50  0000 L CNN
+F 1 "CP" H 7625 2200 50  0000 L CNN
+F 2 "" H 7638 2150 50  0001 C CNN
+F 3 "" H 7600 2300 50  0001 C CNN
+	1    7600 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP 10uF
+U 1 1 5B4E1A70
+P 9450 2500
+F 0 "10uF" H 9475 2600 50  0000 L CNN
+F 1 "CP" H 9475 2400 50  0000 L CNN
+F 2 "" H 9488 2350 50  0001 C CNN
+F 3 "" H 9450 2500 50  0001 C CNN
+	1    9450 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP 100uF
+U 1 1 5B4E1B6A
+P 1500 6950
+F 0 "100uF" H 1525 7050 50  0000 L CNN
+F 1 "CP" H 1525 6850 50  0000 L CNN
+F 2 "" H 1538 6800 50  0001 C CNN
+F 3 "" H 1500 6950 50  0001 C CNN
+	1    1500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 220k
+U 1 1 5B4E1BD6
+P 1150 6950
+F 0 "220k" V 1230 6950 50  0000 C CNN
+F 1 "R" V 1150 6950 50  0000 C CNN
+F 2 "" V 1080 6950 50  0001 C CNN
+F 3 "" H 1150 6950 50  0001 C CNN
+	1    1150 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 220k
+U 1 1 5B4E1CA3
+P 1350 6350
+F 0 "220k" V 1430 6350 50  0000 C CNN
+F 1 "R" V 1350 6350 50  0000 C CNN
+F 2 "" V 1280 6350 50  0001 C CNN
+F 3 "" H 1350 6350 50  0001 C CNN
+	1    1350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 8k2
+U 1 1 5B4E1CE8
+P 7950 2600
+F 0 "8k2" V 8030 2600 50  0000 C CNN
+F 1 "R" V 7950 2600 50  0000 C CNN
+F 2 "" V 7880 2600 50  0001 C CNN
+F 3 "" H 7950 2600 50  0001 C CNN
+	1    7950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L R 680k
+U 1 1 5B4E1E2C
+P 8500 3300
+F 0 "680k" V 8580 3300 50  0000 C CNN
+F 1 "R" V 8500 3300 50  0000 C CNN
+F 2 "" V 8430 3300 50  0001 C CNN
+F 3 "" H 8500 3300 50  0001 C CNN
+	1    8500 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E21EB
+P 1350 7200
+F 0 "#PWR?" H 1350 6950 50  0001 C CNN
+F 1 "GNDREF" H 1350 7050 50  0000 C CNN
+F 2 "" H 1350 7200 50  0001 C CNN
+F 3 "" H 1350 7200 50  0001 C CNN
+	1    1350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E2215
+P 8500 2900
+F 0 "#PWR?" H 8500 2650 50  0001 C CNN
+F 1 "GNDREF" H 8500 2750 50  0000 C CNN
+F 2 "" H 8500 2900 50  0001 C CNN
+F 3 "" H 8500 2900 50  0001 C CNN
+	1    8500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E2232
+P 8500 2100
+F 0 "#PWR?" H 8500 1950 50  0001 C CNN
+F 1 "+9V" H 8500 2240 50  0000 C CNN
+F 2 "" H 8500 2100 50  0001 C CNN
+F 3 "" H 8500 2100 50  0001 C CNN
+	1    8500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E243C
+P 1350 6150
+F 0 "#PWR?" H 1350 6000 50  0001 C CNN
+F 1 "+9V" H 1350 6290 50  0000 C CNN
+F 2 "" H 1350 6150 50  0001 C CNN
+F 3 "" H 1350 6150 50  0001 C CNN
+	1    1350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7150 1500 7100
+Wire Wire Line
+	1150 7150 1500 7150
+Wire Wire Line
+	1350 7150 1350 7200
+Wire Wire Line
+	1150 7100 1150 7150
+Connection ~ 1350 7150
+Wire Wire Line
+	1150 6800 1150 6750
+Wire Wire Line
+	1150 6750 1500 6750
+Wire Wire Line
+	1350 6500 1350 6750
+Wire Wire Line
+	1500 6750 1500 6800
+Connection ~ 1350 6750
+Wire Wire Line
+	1350 6600 1700 6600
+Connection ~ 1350 6600
+Wire Wire Line
+	8100 2400 8300 2400
+Wire Wire Line
+	8900 2500 9300 2500
+Wire Wire Line
+	8100 2600 8300 2600
+Wire Wire Line
+	7600 2600 7600 2450
+Wire Wire Line
+	7600 2150 7600 2050
+Wire Wire Line
+	8200 2600 8200 3300
+Wire Wire Line
+	8200 3300 8350 3300
+Connection ~ 8200 2600
+Wire Wire Line
+	8650 3300 9100 3300
+Wire Wire Line
+	9100 3300 9100 2500
+Connection ~ 9100 2500
+Wire Wire Line
+	8500 2800 8500 2900
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	9600 2500 9800 2500
+Text GLabel 8100 2050 1    60   Input ~ 0
+V_bias
+Wire Wire Line
+	8100 2050 8100 2400
+Wire Wire Line
+	7600 2600 7800 2600
+Wire Wire Line
+	9800 2500 9800 2050
+$Comp
+L TL072 U?
+U 1 1 5B4E4B47
+P 2200 2000
+F 0 "U?" H 2200 2200 50  0000 L CNN
+F 1 "TL072" H 2200 1800 50  0000 L CNN
+F 2 "" H 2200 2000 50  0001 C CNN
+F 3 "" H 2200 2000 50  0001 C CNN
+	1    2200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E4B4D
+P 1200 1800
+F 0 "10uF?" H 1225 1900 50  0000 L CNN
+F 1 "CP" H 1225 1700 50  0000 L CNN
+F 2 "" H 1238 1650 50  0001 C CNN
+F 3 "" H 1200 1800 50  0001 C CNN
+	1    1200 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E4B53
+P 3050 2000
+F 0 "10uF?" H 3075 2100 50  0000 L CNN
+F 1 "CP" H 3075 1900 50  0000 L CNN
+F 2 "" H 3088 1850 50  0001 C CNN
+F 3 "" H 3050 2000 50  0001 C CNN
+	1    3050 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 1k?
+U 1 1 5B4E4B59
+P 1550 2100
+F 0 "1k?" V 1630 2100 50  0000 C CNN
+F 1 "R" V 1550 2100 50  0000 C CNN
+F 2 "" V 1480 2100 50  0001 C CNN
+F 3 "" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R 1k?
+U 1 1 5B4E4B5F
+P 2100 2800
+F 0 "1k?" V 2180 2800 50  0000 C CNN
+F 1 "R" V 2100 2800 50  0000 C CNN
+F 2 "" V 2030 2800 50  0001 C CNN
+F 3 "" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E4B65
+P 2100 2400
+F 0 "#PWR?" H 2100 2150 50  0001 C CNN
+F 1 "GNDREF" H 2100 2250 50  0000 C CNN
+F 2 "" H 2100 2400 50  0001 C CNN
+F 3 "" H 2100 2400 50  0001 C CNN
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E4B6B
+P 2100 1600
+F 0 "#PWR?" H 2100 1450 50  0001 C CNN
+F 1 "+9V" H 2100 1740 50  0000 C CNN
+F 2 "" H 2100 1600 50  0001 C CNN
+F 3 "" H 2100 1600 50  0001 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1900 1900 1900
+Wire Wire Line
+	2500 2000 2900 2000
+Wire Wire Line
+	1700 2100 1900 2100
+Wire Wire Line
+	1200 2100 1200 1950
+Wire Wire Line
+	1200 1650 1200 1550
+Wire Wire Line
+	1800 2100 1800 2800
+Wire Wire Line
+	1800 2800 1950 2800
+Connection ~ 1800 2100
+Wire Wire Line
+	2250 2800 2700 2800
+Wire Wire Line
+	2700 2800 2700 2000
+Connection ~ 2700 2000
+Wire Wire Line
+	2100 2300 2100 2400
+Wire Wire Line
+	2100 1600 2100 1700
+Text GLabel 3400 1550 1    60   Input ~ 0
+to_mixer_section
+Wire Wire Line
+	3200 2000 3400 2000
+Text GLabel 1700 1550 1    60   Input ~ 0
+V_bias
+Text GLabel 1200 1550 1    60   Input ~ 0
+Audio_In
+Wire Wire Line
+	1700 1550 1700 1900
+Wire Wire Line
+	1200 2100 1400 2100
+Wire Wire Line
+	3400 2000 3400 1550
+Wire Notes Line
+	700  700  3800 700 
+Wire Notes Line
+	3800 700  3800 3200
+Wire Notes Line
+	3800 3200 700  3200
+Wire Notes Line
+	700  3200 700  700 
+Text Notes 800  3150 0    60   ~ 0
+Repeat for each output from Volca
+Text GLabel 7600 2050 1    60   Input ~ 0
+From_mixer_section_L_clean
+Text Notes 2250 2950 0    39   ~ 0
+Can be changed to align the volume\nfrom different outputs from Volca
+Text GLabel 9800 2050 1    60   Input ~ 0
+to_output_L
+$Comp
+L TL072 U?
+U 1 1 5B4E72E3
+P 5900 2500
+F 0 "U?" H 5900 2700 50  0000 L CNN
+F 1 "TL072" H 5900 2300 50  0000 L CNN
+F 2 "" H 5900 2500 50  0001 C CNN
+F 3 "" H 5900 2500 50  0001 C CNN
+	1    5900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E72E9
+P 4900 2300
+F 0 "10uF?" H 4925 2400 50  0000 L CNN
+F 1 "CP" H 4925 2200 50  0000 L CNN
+F 2 "" H 4938 2150 50  0001 C CNN
+F 3 "" H 4900 2300 50  0001 C CNN
+	1    4900 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E72EF
+P 6750 2500
+F 0 "10uF?" H 6775 2600 50  0000 L CNN
+F 1 "CP" H 6775 2400 50  0000 L CNN
+F 2 "" H 6788 2350 50  0001 C CNN
+F 3 "" H 6750 2500 50  0001 C CNN
+	1    6750 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 8k?
+U 1 1 5B4E72F5
+P 5250 2600
+F 0 "8k?" V 5330 2600 50  0000 C CNN
+F 1 "R" V 5250 2600 50  0000 C CNN
+F 2 "" V 5180 2600 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L R 680k?
+U 1 1 5B4E72FB
+P 5800 3300
+F 0 "680k?" V 5880 3300 50  0000 C CNN
+F 1 "R" V 5800 3300 50  0000 C CNN
+F 2 "" V 5730 3300 50  0001 C CNN
+F 3 "" H 5800 3300 50  0001 C CNN
+	1    5800 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E7301
+P 5800 2900
+F 0 "#PWR?" H 5800 2650 50  0001 C CNN
+F 1 "GNDREF" H 5800 2750 50  0000 C CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E7307
+P 5800 2100
+F 0 "#PWR?" H 5800 1950 50  0001 C CNN
+F 1 "+9V" H 5800 2240 50  0000 C CNN
+F 2 "" H 5800 2100 50  0001 C CNN
+F 3 "" H 5800 2100 50  0001 C CNN
+	1    5800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2400 5600 2400
+Wire Wire Line
+	6200 2500 6600 2500
+Wire Wire Line
+	5400 2600 5600 2600
+Wire Wire Line
+	4900 2600 4900 2450
+Wire Wire Line
+	4900 2150 4900 2050
+Wire Wire Line
+	5500 2600 5500 3300
+Wire Wire Line
+	5500 3300 5650 3300
+Connection ~ 5500 2600
+Wire Wire Line
+	5950 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 2500
+Connection ~ 6400 2500
+Wire Wire Line
+	5800 2800 5800 2900
+Wire Wire Line
+	5800 2100 5800 2200
+Wire Wire Line
+	6900 2500 7100 2500
+Text GLabel 5400 2050 1    60   Input ~ 0
+V_bias
+Wire Wire Line
+	5400 2050 5400 2400
+Wire Wire Line
+	4900 2600 5100 2600
+Wire Wire Line
+	7100 2500 7100 2050
+Text GLabel 4900 2050 1    60   Input ~ 0
+From_mixer_section_R_clean
+Text GLabel 7100 2050 1    60   Input ~ 0
+to_output_R
+$Comp
+L CP 10uF?
+U 1 1 5B4E7EA3
+P 7600 4700
+F 0 "10uF?" H 7625 4800 50  0000 L CNN
+F 1 "CP" H 7625 4600 50  0000 L CNN
+F 2 "" H 7638 4550 50  0001 C CNN
+F 3 "" H 7600 4700 50  0001 C CNN
+	1    7600 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E7EA9
+P 9450 4900
+F 0 "10uF?" H 9475 5000 50  0000 L CNN
+F 1 "CP" H 9475 4800 50  0000 L CNN
+F 2 "" H 9488 4750 50  0001 C CNN
+F 3 "" H 9450 4900 50  0001 C CNN
+	1    9450 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 8k?
+U 1 1 5B4E7EAF
+P 7950 5000
+F 0 "8k?" V 8030 5000 50  0000 C CNN
+F 1 "R" V 7950 5000 50  0000 C CNN
+F 2 "" V 7880 5000 50  0001 C CNN
+F 3 "" H 7950 5000 50  0001 C CNN
+	1    7950 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L R 680k?
+U 1 1 5B4E7EB5
+P 8500 5700
+F 0 "680k?" V 8580 5700 50  0000 C CNN
+F 1 "R" V 8500 5700 50  0000 C CNN
+F 2 "" V 8430 5700 50  0001 C CNN
+F 3 "" H 8500 5700 50  0001 C CNN
+	1    8500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E7EBB
+P 8500 5300
+F 0 "#PWR?" H 8500 5050 50  0001 C CNN
+F 1 "GNDREF" H 8500 5150 50  0000 C CNN
+F 2 "" H 8500 5300 50  0001 C CNN
+F 3 "" H 8500 5300 50  0001 C CNN
+	1    8500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E7EC1
+P 8500 4500
+F 0 "#PWR?" H 8500 4350 50  0001 C CNN
+F 1 "+9V" H 8500 4640 50  0000 C CNN
+F 2 "" H 8500 4500 50  0001 C CNN
+F 3 "" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4800 8300 4800
+Wire Wire Line
+	8900 4900 9300 4900
+Wire Wire Line
+	8100 5000 8300 5000
+Wire Wire Line
+	7600 5000 7600 4850
+Wire Wire Line
+	7600 4550 7600 4450
+Wire Wire Line
+	8200 5000 8200 5700
+Wire Wire Line
+	8200 5700 8350 5700
+Connection ~ 8200 5000
+Wire Wire Line
+	8650 5700 9100 5700
+Wire Wire Line
+	9100 5700 9100 4900
+Connection ~ 9100 4900
+Wire Wire Line
+	8500 5200 8500 5300
+Wire Wire Line
+	8500 4500 8500 4600
+Wire Wire Line
+	9600 4900 9800 4900
+Text GLabel 8100 4450 1    60   Input ~ 0
+V_bias
+Wire Wire Line
+	8100 4450 8100 4800
+Wire Wire Line
+	7600 5000 7800 5000
+Wire Wire Line
+	9800 4900 9800 4450
+Text GLabel 7600 4450 1    60   Input ~ 0
+From_mixer_section_L_comp
+Text GLabel 9800 4450 1    60   Input ~ 0
+to_output_L
+$Comp
+L TL072 U?
+U 1 1 5B4E7EDB
+P 5900 4900
+F 0 "U?" H 5900 5100 50  0000 L CNN
+F 1 "TL072" H 5900 4700 50  0000 L CNN
+F 2 "" H 5900 4900 50  0001 C CNN
+F 3 "" H 5900 4900 50  0001 C CNN
+	1    5900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E7EE1
+P 4900 4700
+F 0 "10uF?" H 4925 4800 50  0000 L CNN
+F 1 "CP" H 4925 4600 50  0000 L CNN
+F 2 "" H 4938 4550 50  0001 C CNN
+F 3 "" H 4900 4700 50  0001 C CNN
+	1    4900 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP 10uF?
+U 1 1 5B4E7EE7
+P 6750 4900
+F 0 "10uF?" H 6775 5000 50  0000 L CNN
+F 1 "CP" H 6775 4800 50  0000 L CNN
+F 2 "" H 6788 4750 50  0001 C CNN
+F 3 "" H 6750 4900 50  0001 C CNN
+	1    6750 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R 8k?
+U 1 1 5B4E7EED
+P 5250 5000
+F 0 "8k?" V 5330 5000 50  0000 C CNN
+F 1 "R" V 5250 5000 50  0000 C CNN
+F 2 "" V 5180 5000 50  0001 C CNN
+F 3 "" H 5250 5000 50  0001 C CNN
+	1    5250 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L R 680k?
+U 1 1 5B4E7EF3
+P 5800 5700
+F 0 "680k?" V 5880 5700 50  0000 C CNN
+F 1 "R" V 5800 5700 50  0000 C CNN
+F 2 "" V 5730 5700 50  0001 C CNN
+F 3 "" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 5B4E7EF9
+P 5800 5300
+F 0 "#PWR?" H 5800 5050 50  0001 C CNN
+F 1 "GNDREF" H 5800 5150 50  0000 C CNN
+F 2 "" H 5800 5300 50  0001 C CNN
+F 3 "" H 5800 5300 50  0001 C CNN
+	1    5800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR?
+U 1 1 5B4E7EFF
+P 5800 4500
+F 0 "#PWR?" H 5800 4350 50  0001 C CNN
+F 1 "+9V" H 5800 4640 50  0000 C CNN
+F 2 "" H 5800 4500 50  0001 C CNN
+F 3 "" H 5800 4500 50  0001 C CNN
+	1    5800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4800 5600 4800
+Wire Wire Line
+	6200 4900 6600 4900
+Wire Wire Line
+	5400 5000 5600 5000
+Wire Wire Line
+	4900 5000 4900 4850
+Wire Wire Line
+	4900 4550 4900 4450
+Wire Wire Line
+	5500 5000 5500 5700
+Wire Wire Line
+	5500 5700 5650 5700
+Connection ~ 5500 5000
+Wire Wire Line
+	5950 5700 6400 5700
+Wire Wire Line
+	6400 5700 6400 4900
+Connection ~ 6400 4900
+Wire Wire Line
+	5800 5200 5800 5300
+Wire Wire Line
+	5800 4500 5800 4600
+Wire Wire Line
+	6900 4900 7100 4900
+Text GLabel 5400 4450 1    60   Input ~ 0
+V_bias
+Wire Wire Line
+	5400 4450 5400 4800
+Wire Wire Line
+	4900 5000 5100 5000
+Wire Wire Line
+	7100 4900 7100 4450
+Text GLabel 4900 4450 1    60   Input ~ 0
+From_mixer_section_R_comp
+Text GLabel 7100 4450 1    60   Input ~ 0
+to_output_R
+$Comp
+L TL072 U?
+U 2 1 5B4E988A
+P 8600 2500
+F 0 "U?" H 8600 2700 50  0000 L CNN
+F 1 "TL072" H 8600 2300 50  0000 L CNN
+F 2 "" H 8600 2500 50  0001 C CNN
+F 3 "" H 8600 2500 50  0001 C CNN
+	2    8600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL072 U?
+U 1 1 5B4E9E1C
+P 8600 4900
+F 0 "U?" H 8600 5100 50  0000 L CNN
+F 1 "TL072" H 8600 4700 50  0000 L CNN
+F 2 "" H 8600 4900 50  0001 C CNN
+F 3 "" H 8600 4900 50  0001 C CNN
+	1    8600 4900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
