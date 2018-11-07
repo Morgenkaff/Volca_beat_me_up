@@ -6,4 +6,5 @@ More information will come whenever I have time, but feel free to ask questions.
 
 ### TODO:
 Writeup of process.  
-Referrals to inspirations etc.
+Referrals to inspirations etc.  
+And so, so much work yet.
